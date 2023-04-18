@@ -6,11 +6,11 @@ export default class ErrorRepository {
       [402, 'Payment Required'],
       [403, 'Forbidden'],
       [404, 'Not Found'],
-      [405, 'Method Not Allowed']
+      [405, 'Method Not Allowed'],
     ]);
   }
 
   translate(code) {
-    return this.members.get(code) || 'Unknown error'
+    return this.members.get(code) || 'Unknown error';
   }
 }

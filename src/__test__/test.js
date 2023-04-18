@@ -1,6 +1,6 @@
 import ErrorRepository from '../js/main';
 
-const error = new ErrorRepository()
+const error = new ErrorRepository();
 
 test('Test method translate', () => {
   expect(error.translate(400)).toBe('Bad Request');
